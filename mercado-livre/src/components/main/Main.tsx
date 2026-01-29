@@ -7,15 +7,15 @@ const Main = () => {
             <div className="container">
                 <h2 className="section-title">Ofertas Do dia</h2>
                 <div className="products-grid" id="products-grid">
-                    {products && products.map((p) => (
+                    {products.map((p) => (
                         <div key={p.id} className="product-card">
                             <img className="product-image" src={p.image} alt={p.title} />
                             <h3 className="product-title">{p.title}</h3>
                             <div className="product-price">
-                                <span className="price">{p.price}</span>
+                                <span className="price">R$ {p.price}</span>
                             </div>
                             <div className="product-discount">
-                                <span className="discount">{p.discount}</span>
+                                <span className="discount">{p.discount}% OFF</span>
                             </div>
                         </div>
                     ))
