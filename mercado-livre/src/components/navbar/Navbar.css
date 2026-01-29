@@ -9,37 +9,41 @@
 }
 
 .logo {
-    height: 84px;
+    height: 150px;
     margin-bottom: 10px;
 }
 
+
 .search-container {
     display: flex;
-    gap: 5px;
     align-items: center;
+}
+
+.search{
+    display: flex;
+    flex: 1;
 }
 
 .search-input {
     flex: 1;
     padding: 10px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
+    height: 44px;
     outline: none;
-    height: 34px;
 }
 
 .search-btn {
     background-color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
     padding: 10px 20px;
     transition: .5s;
     height: 34px;
-}
-
-.search-btn:hover {
-    background-color: #f0f0f0;
+    border-left: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
 }
