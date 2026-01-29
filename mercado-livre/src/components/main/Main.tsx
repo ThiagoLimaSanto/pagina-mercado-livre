@@ -1,13 +1,18 @@
-import { products } from "../../db/data";
+import { type Product } from "../../db/data";
 import './Main.css';
 
-const Main = () => {
+interface MainProps {
+    filteredProducts: Product[];
+}
+
+const Main = ({ filteredProducts }: MainProps) => {
     return (
         <main className="main">
+
             <div className="container">
                 <h2 className="section-title">Ofertas Do dia</h2>
                 <div className="products-grid" id="products-grid">
-                    {products.map((p) => (
+                    {filteredProducts.map((p) => (
                         <div key={p.id} className="product-card">
                             <img className="product-image" src={p.image} alt={p.title} />
                             <h3 className="product-title">{p.title}</h3>
