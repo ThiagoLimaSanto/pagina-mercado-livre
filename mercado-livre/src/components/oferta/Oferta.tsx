@@ -1,3 +1,5 @@
+import './Oferta.css';
+
 const Oferta = () => {
     return (
         <section className="hero">

@@ -1,0 +1,22 @@
+.hero {
+    background-image: url("https://http2.mlstatic.com/D_NQ_911029-MLA91604157045_092025-OO.webp");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #272928;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+}
